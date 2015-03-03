@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D434AAE3-2107-40CD-A2D8-A099C79494CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EDM_Builder</RootNamespace>
+    <AssemblyName>EDM_Builder</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tamir.SharpSSH">
+      <HintPath>DLL\Tamir.SharpSSH.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entity\CountrySettings.cs" />
+    <Compile Include="Helper\Common.cs" />
+    <Compile Include="MyControls\Header\Header_A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Header\Header_A.Designer.cs">
+      <DependentUpon>Header_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\Header\Header_B.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Header\Header_B.Designer.cs">
+      <DependentUpon>Header_B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\Header\Header_C.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Header\Header_C.Designer.cs">
+      <DependentUpon>Header_C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\Product\Product_A.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Product\Product_A.Designer.cs">
+      <DependentUpon>Product_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\Product\Product_B.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Product\Product_B.Designer.cs">
+      <DependentUpon>Product_B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\TemplateAEntity.cs" />
+    <Compile Include="Helper\ControlExtended.cs" />
+    <Compile Include="Helper\FtpUpload.cs" />
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\Product\Product_C.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Product\Product_C.Designer.cs">
+      <DependentUpon>Product_C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\Product\Product_D.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Product\Product_D.Designer.cs">
+      <DependentUpon>Product_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\Product\Product_E.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Product\Product_E.Designer.cs">
+      <DependentUpon>Product_E.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MyControls\Header\Header_A.resx">
+      <DependentUpon>Header_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Header\Header_B.resx">
+      <DependentUpon>Header_B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Header\Header_C.resx">
+      <DependentUpon>Header_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Product\Product_A.resx">
+      <DependentUpon>Product_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Product\Product_B.resx">
+      <DependentUpon>Product_B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Product\Product_C.resx">
+      <DependentUpon>Product_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Product\Product_D.resx">
+      <DependentUpon>Product_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Product\Product_E.resx">
+      <DependentUpon>Product_E.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.ico" />
+    <Content Include="EDMSettings.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Html\Template\HeaderStyle\header_style_a.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Html\Template\HeaderStyle\header_style_b.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Html\Template\HeaderStyle\header_style_c.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Html\Template\Header\header_foot.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Html\Template\ProductStyle\product_sylte_a.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Html\Template\ProductStyle\product_sylte_b.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Html\Template\ProductStyle\product_sylte_c.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Html\Template\ProductStyle\product_sylte_d.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Html\Template\ProductStyle\product_sylte_e.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\empty-pic-bg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Image\waiting_clear.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

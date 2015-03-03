@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<setting>
+	<serverIP>45.56.85.239</serverIP>
+	<userID>root</userID>
+	<password>uJsqPQBIAqq42j</password>
+	<serverPath>pandacheer.net/edm</serverPath>
+	<linkPart>?utm_medium=email&amp;utm_source=transactional&amp;utm_campaign=edm</linkPart>
+
+	<country name="au">
+		<website>http://www.drgrab.com.au</website>
+		<email>noreply@edm.drgrab.com.au</email>
+		<support>support@drgrab.com.au</support>
+		<currency>$</currency>
+		<logo>http://www.pandacheer.net/edm/img/au.png</logo>
+		<twitter>http://twitter.com/drgrab</twitter>
+		<facebook>https://www.facebook.com/drgrab</facebook>
+		<unsubscribe>http://www.pandacheer.net/drgrabscript/sc/index.php?email=%recipient%&amp;site=au</unsubscribe>
+		<viewMoreImgPath>http://www.sydneytoday.com/8818/emailpage/images/more.jpg</viewMoreImgPath>
+		<viewDealString>View More</viewDealString>
+	</country>
+	<country name="nz">
+		<website>http://www.drgrab.co.nz</website>
+		<email>noreply@edm.drgrab.co.nz</email>
+		<support>support@drgrab.co.nz</support>
+		<currency>$</currency>
+		<logo>http://www.pandacheer.net/edm/img/nz.png</logo>
+		<twitter>http://twitter.com/drgrab</twitter>
+		<facebook>https://www.facebook.com/drgrabnz</facebook>
+		<unsubscribe>http://www.pandacheer.net/drgrabscript/sc/index.php?email=%recipient%&amp;site=nz</unsubscribe>
+		<viewMoreImgPath>http://www.sydneytoday.com/8818/emailpage/images/more.jpg</viewMoreImgPath>
+		<viewDealString>View More</viewDealString>
+	</country>
+	<country name="us">
+		<website>http://www.drgrab.com</website>
+		<email>noreply@edm.drgrab.com</email>
+		<support>support@drgrab.com</support>
+		<currency>$</currency>
+		<logo>http://www.pandacheer.net/edm/img/us.png</logo>
+		<twitter>http://twitter.com/drgrab</twitter>
+		<facebook>https://www.facebook.com/pages/DrGrab-USA/347277128757399</facebook>
+		<unsubscribe>http://www.pandacheer.net/drgrabscript/sc/index.php?email=%recipient%&amp;site=us</unsubscribe>
+		<viewMoreImgPath>http://www.sydneytoday.com/8818/emailpage/images/more.jpg</viewMoreImgPath>
+		<viewDealString>View More</viewDealString>
+	</country>
+	<country name="ca">
+		<website>http://www.drgrab.ca</website>
+		<email>noreply@edm.drgrab.ca</email>
+		<support>support@drgrab.ca</support>
+		<currency>$</currency>
+		<logo>http://www.pandacheer.net/edm/img/ca.png</logo>
+		<twitter>http://twitter.com/drgrab</twitter>
+		<facebook>https://www.facebook.com/pages/DrGrab-Canada/1507761072793586</facebook>
+		<unsubscribe>http://www.pandacheer.net/drgrabscript/sc/index.php?email=%recipient%&amp;site=ca</unsubscribe>
+		<viewMoreImgPath>http://www.sydneytoday.com/8818/emailpage/images/more.jpg</viewMoreImgPath>
+		<viewDealString>View More</viewDealString>
+	</country>
+	<country name="uk">
+		<website>http://www.drgrab.co.uk</website>
+		<email>noreply@edm.drgrab.co.uk</email>
+		<support>support@drgrab.co.uk</support>
+		<currency>£</currency>
+		<logo>http://www.pandacheer.net/edm/img/uk.png</logo>
+		<twitter>http://twitter.com/drgrab</twitter>
+		<facebook>https://www.facebook.com/drgrab</facebook>
+		<unsubscribe>http://www.pandacheer.net/drgrabscript/sc/index.php?email=%recipient%&amp;site=uk</unsubscribe>
+		<viewMoreImgPath>http://www.sydneytoday.com/8818/emailpage/images/more.jpg</viewMoreImgPath>
+		<viewDealString>View More</viewDealString>
+	</country>
+	<country name="fr">
+		<website>http://www.drgrab.fr</website>
+		<email>noreply@edm.drgrab.fr</email>
+		<support>support@drgrab.fr</support>
+		<currency>€</currency>
+		<logo>http://www.pandacheer.net/edm/img/fr.png</logo>
+		<twitter>http://twitter.com/drgrab</twitter>
+		<facebook>https://www.facebook.com/drgrab.fr</facebook>
+		<unsubscribe>http://www.pandacheer.net/drgrabscript/sc/index.php?email=%recipient%&amp;site=fr</unsubscribe>
+		<viewMoreImgPath>http://www.sydneytoday.com/8818/emailpage/images/more.jpg</viewMoreImgPath>
+		<viewDealString>Voir Plus</viewDealString>
+	</country>
+</setting>
