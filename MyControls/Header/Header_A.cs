@@ -19,6 +19,24 @@ namespace EDM_Builder.MyControls.Header
             InitializeComponent();
         }
 
+        public void LoadingURL(string strWebSite)
+        {
+            textBox_Title_1.Text = "Home";
+            textBox_Title_2.Text = "Fashion";
+            textBox_Title_3.Text = "Sports";
+            textBox_Title_4.Text = "Pets";
+            textBox_Title_5.Text = "Kids";
+            textBox_Title_6.Text = "Tech";
+            textBox_Title_7.Text = "Freebies";
+            textBox_URL_1.Text = string.Format("{0}/collections/home-garden{1}", strWebSite, MainFrm.strLinkPart);
+            textBox_URL_2.Text = string.Format("{0}/collections/fashion-accessories{1}", strWebSite, MainFrm.strLinkPart);
+            textBox_URL_3.Text = string.Format("{0}/collections/sport-outdoors{1}", strWebSite, MainFrm.strLinkPart);
+            textBox_URL_4.Text = string.Format("{0}/collections/pets{1}", strWebSite, MainFrm.strLinkPart);
+            textBox_URL_5.Text = string.Format("{0}/collections/baby-kids{1}", strWebSite, MainFrm.strLinkPart);
+            textBox_URL_6.Text = string.Format("{0}/collections/tech{1}", strWebSite, MainFrm.strLinkPart);
+            textBox_URL_7.Text = string.Format("http://promotion{0}/freebies{1}", strWebSite.Substring(strWebSite.IndexOf(".")), MainFrm.strLinkPart);
+        }
+
         /// <summary>
         /// 获取即将加入的html内容
         /// </summary>
@@ -40,13 +58,13 @@ namespace EDM_Builder.MyControls.Header
                             textBox_Title_5.Text,
                             textBox_Title_6.Text,
                             textBox_Title_7.Text,
-                            textBox_URL_1.Text + MainFrm.strLinkPart,
-                            textBox_URL_2.Text + MainFrm.strLinkPart,
-                            textBox_URL_3.Text + MainFrm.strLinkPart,
-                            textBox_URL_4.Text + MainFrm.strLinkPart,
-                            textBox_URL_5.Text + MainFrm.strLinkPart,
-                            textBox_URL_6.Text + MainFrm.strLinkPart,
-                            textBox_URL_7.Text + MainFrm.strLinkPart);
+                            textBox_URL_1.Text,
+                            textBox_URL_2.Text,
+                            textBox_URL_3.Text,
+                            textBox_URL_4.Text,
+                            textBox_URL_5.Text,
+                            textBox_URL_6.Text,
+                            textBox_URL_7.Text);
             }
             catch (Exception ex)
             {

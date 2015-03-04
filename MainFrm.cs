@@ -65,6 +65,8 @@ namespace EDM_Builder
         {
             this.Text = string.Format("{0} - {1}", this.Text, Common.AssemblyFileVersion());
             comboBox_Country.SelectedIndex = 0;
+            //"January 20,  2015"
+            this.textBox_Date.Text=System.DateTime.Now.ToString("MMM");
         }
 
         /// <summary>
@@ -228,6 +230,7 @@ namespace EDM_Builder
 
         private void RefreshCurrencyOnUI()
         {
+            header_A1.LoadingURL(settings.WebSite);
             product_A1.UpdateCurrencySymbol(CurrentCurrency);
             product_B1.UpdateCurrencySymbol(CurrentCurrency);
             product_C1.UpdateCurrencySymbol(CurrentCurrency);
@@ -426,8 +429,12 @@ namespace EDM_Builder
                     , string.Format("{0}{1}", settings.WebSite, strLinkPart)
                     , settings.Logo
                     , settings.Unsubscribe
-                    , settings.Facebook
                     , settings.Twitter
+                    , settings.Facebook
+                    , settings.Email
+                    , settings.FootStringLineOne
+                    , settings.FootStringLineTwo
+                    , settings.UnsubscribeString
                     );
             }
             return strCountryFrameHtml;
@@ -468,6 +475,9 @@ namespace EDM_Builder
                 currentCountrySettings.Unsubscribe = EdmParams.SelectSingleNode("unsubscribe").InnerText;
                 currentCountrySettings.ViewMoreImgPath = EdmParams.SelectSingleNode("viewMoreImgPath").InnerText;
                 currentCountrySettings.ViewDealString = EdmParams.SelectSingleNode("viewDealString").InnerText;
+                currentCountrySettings.FootStringLineOne = EdmParams.SelectSingleNode("footStringLineOne").InnerText;
+                currentCountrySettings.FootStringLineTwo = EdmParams.SelectSingleNode("footStringLineTwo").InnerText;
+                currentCountrySettings.UnsubscribeString = EdmParams.SelectSingleNode("unsubscribeString").InnerText;
             }
             else
             {

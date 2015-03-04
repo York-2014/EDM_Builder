@@ -50,5 +50,11 @@ namespace EDM_Builder.Entity
         public string ViewMoreImgPath { get; set; }
 
         public string ViewDealString { get; set; }
+
+        public string FootStringLineOne { get; set; }
+
+        public string FootStringLineTwo { get; set; }
+
+        public string UnsubscribeString { get; set; }
     }
 }
