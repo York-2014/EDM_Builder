@@ -27,3 +27,4 @@ D:\软件\开发环境\工作\WorkAppCodes\项目\EDM_Builder\trunk\obj\Release\
 D:\软件\开发环境\工作\WorkAppCodes\项目\EDM_Builder\trunk\obj\Release\EDM_Builder.csproj.GenerateResource.Cache
 D:\软件\开发环境\工作\WorkAppCodes\项目\EDM_Builder\trunk\obj\Release\EDM_Builder.exe
 D:\软件\开发环境\工作\WorkAppCodes\项目\EDM_Builder\trunk\obj\Release\EDM_Builder.pdb
+D:\软件\开发环境\工作\WorkAppCodes\项目\EDM_Builder\trunk\obj\Release\EDM_Builder.csprojResolveAssemblyReference.cache

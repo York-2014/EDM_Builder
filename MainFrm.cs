@@ -48,6 +48,8 @@ namespace EDM_Builder
         public static string ViewMoreImgPath = "http://www.sydneytoday.com/8818/emailpage/images/more.jpg";
         public static string ViewMoreString = "View More";
 
+        private static readonly string[] Months = new string[] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+
         private Thread thSubmit;
 
         private bool JoinButtionEnable = false;
@@ -66,7 +68,9 @@ namespace EDM_Builder
             this.Text = string.Format("{0} - {1}", this.Text, Common.AssemblyFileVersion());
             comboBox_Country.SelectedIndex = 0;
             //"January 20,  2015"
-            this.textBox_Date.Text=System.DateTime.Now.ToString("MMM");
+            //this.textBox_Date.TextChanged -= textBox_Date_TextChanged;
+            //this.textBox_Date.Text = string.Format("{0} {1},  {2}", Months[System.DateTime.Now.Month - 1], System.DateTime.Now.Day, DateTime.Now.Year);
+            //this.textBox_Date.TextChanged += textBox_Date_TextChanged;
         }
 
         /// <summary>
@@ -230,10 +234,10 @@ namespace EDM_Builder
 
         private void RefreshCurrencyOnUI()
         {
-            header_A1.LoadingURL(settings.WebSite);
             product_A1.UpdateCurrencySymbol(CurrentCurrency);
             product_B1.UpdateCurrencySymbol(CurrentCurrency);
             product_C1.UpdateCurrencySymbol(CurrentCurrency);
+            header_A1.LoadingURL(settings.WebSite);
         }
 
         private void ReLoadingHtmlWeb()
